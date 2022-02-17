@@ -3,8 +3,8 @@ pragma solidity ^0.4.24;
 // ----------------------------------------------------------------------------
 // Sample token contract
 //
-// Symbol        : {{PLS}}          // สัญลักษณ์ เหรียญ
-// Name          : {{PLS Token}}    //ชื่อเหรียญ
+// Symbol        : {{PLS}}        
+// Name          : {{PLS Token}}  
 // Total supply  : {{1xxxxxxxxxxxxxx}}
 // Decimals      : {{4}}
 // Owner Account : {{0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D}}
