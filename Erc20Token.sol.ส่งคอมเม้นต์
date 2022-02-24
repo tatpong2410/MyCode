@@ -5,7 +5,7 @@ pragma solidity ^0.4.24;		//เวอร์ชั่น
 //
 // Symbol        : {{PLS}}   			 //สัญลักษณ์ เหรียญ
 // Name          : {{PLS Token}} 		 //ชื่อเหรียญ
-// Total supply  : {{1xxxxxxxxxxxxxx}} 	//จำนวน
+// Total supply  : {{1xxxxxxxxxxxxxx}} 	//จำนวนเหรียญ
 // Decimals      : {{4}}			//ทศนิยมเหรียญ
 // Owner Account : {{0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D}} // แอดเค้ากระเป๋าเงินใน MateMask
 //
@@ -84,10 +84,10 @@ contract TSCToken is ERC20Interface, SafeMath {	//เริ่มสร้าง
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "TSC";
-        name = "TSC Token";
-        decimals = 4;
-        _totalSupply = 10000000;
+        symbol = "TSC";         //สัญลักษณ์ เหรียญ
+        name = "TSC Token";     //ชื่อเหรียญ
+        decimals = 4;           //ทศนิยมเหรียญ
+        _totalSupply = 10000000;    //จำนวนเหรียญ
         balances[0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D] = _totalSupply;
         emit Transfer(address(0), 0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D, _totalSupply);   
     }
