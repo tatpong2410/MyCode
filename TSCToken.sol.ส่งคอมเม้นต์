@@ -3,11 +3,11 @@ pragma solidity ^0.4.24;		//เวอร์ชั่น
 // ----------------------------------------------------------------------------
 // Sample token contract			//ไฟล์ตัวอย่าง
 //
-// Symbol        : {{PLS}}   			 //สัญลักษณ์ เหรียญ
-// Name          : {{PLS Token}} 		 //ชื่อเหรียญ
-// Total supply  : {{1xxxxxxxxxxxxxx}} 	//จำนวนเหรียญ
-// Decimals      : {{4}}			//ทศนิยมเหรียญ
-// Owner Account : {{0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D}} // แอดเค้ากระเป๋าเงินใน MateMask
+// Symbol        : {{TSC}}   			 //สัญลักษณ์ เหรียญ
+// Name          : {{TSC Token}} 		 //ชื่อเหรียญ
+// Total supply  : {{1xxxxxxxx}} 	//จำนวนเหรียญ
+// Decimals      : {{6}}			//ทศนิยมเหรียญ
+// Owner Account : {{0x0b0Bf327772b0410004942426f9476c8a44EE7Ed}} // แอดเค้ากระเป๋าเงินใน MateMask
 //
 // Enjoy.
 //									//ใส่ชื่อเราเพื่อไม่ให้เพื่อนก็อป
@@ -86,10 +86,10 @@ contract TSCToken is ERC20Interface, SafeMath {	//เริ่มสร้าง
     constructor() public {
         symbol = "TSC";         //สัญลักษณ์ เหรียญ
         name = "TSC Token";     //ชื่อเหรียญ
-        decimals = 4;           //ทศนิยมเหรียญ
-        _totalSupply = 10000000;    //จำนวนเหรียญ
-        balances[0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D] = _totalSupply;
-        emit Transfer(address(0), 0xCA9114a83C79cA473d1370CE35EEdBEC556D4B2D, _totalSupply);   
+        decimals = 6;           //ทศนิยมเหรียญ
+        _totalSupply = 100000000;    //จำนวนเหรียญ
+        balances[0x0b0Bf327772b0410004942426f9476c8a44EE7Ed] = _totalSupply;
+        emit Transfer(address(0), 0x0b0Bf327772b0410004942426f9476c8a44EE7Ed, _totalSupply);   
     }
 
 
